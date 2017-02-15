@@ -11,7 +11,7 @@ import AFNetworking
 import MBProgressHUD
 
 class MoviesViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
+    var rating: Double!
     @IBOutlet weak var tableView: UITableView!
     var movies: [NSDictionary]?
     override func viewDidLoad() {
@@ -72,7 +72,7 @@ class MoviesViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let overview = movie["overview"] as! String
         let baseURL = "https://image.tmdb.org/t/p/w500/"
         let posterpath  = movie["poster_path"] as! String
-        
+        rating  = movie["vote_average"] as! Double
         let imageURL = NSURL(string: baseURL + posterpath)
         
         
@@ -84,5 +84,19 @@ class MoviesViewController: UIViewController,UITableViewDelegate, UITableViewDat
         print("row \(indexPath.row)")
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as! MovieClickViewController
+        
+        let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
+        let mcell = tableView.cellForRow(at: indexPath!) as! MovieCell
+        
+        destinationViewController.photo = mcell.movieImageView.image
+        destinationViewController.summary = mcell.overviewLabel.text
+        destinationViewController.movieTitle = mcell.titleLabel.text
+        let c:String = String(format:"%.1f", rating)
+        destinationViewController.ratingnum = c
+    }
+
     
 }

@@ -16,6 +16,7 @@
 		CD8CBA7E1E400D1700FEFFBB /* FlicksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8CBA7D1E400D1700FEFFBB /* FlicksUITests.swift */; };
 		CD8CBA8C1E400F3800FEFFBB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8CBA8B1E400F3800FEFFBB /* MoviesViewController.swift */; };
 		CD8CBA8F1E401A2A00FEFFBB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8CBA8E1E401A2A00FEFFBB /* MovieCell.swift */; };
+		CDDA7C5F1E5414B80062B1A4 /* MovieClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA7C5E1E5414B80062B1A4 /* MovieClickViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CD8CBA7F1E400D1700FEFFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8CBA8B1E400F3800FEFFBB /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		CD8CBA8E1E401A2A00FEFFBB /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		CDDA7C5E1E5414B80062B1A4 /* MovieClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieClickViewController.swift; sourceTree = "<group>"; };
 		D4B0B31DAAF764AD26365E8A /* Pods-Flicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				CD8CBA8D1E4019EE00FEFFBB /* Views */,
 				CD8CBA5D1E400D1700FEFFBB /* AppDelegate.swift */,
 				CD8CBA611E400D1700FEFFBB /* Main.storyboard */,
+				CDDA7C5E1E5414B80062B1A4 /* MovieClickViewController.swift */,
 				CD8CBA641E400D1700FEFFBB /* Assets.xcassets */,
 				CD8CBA661E400D1700FEFFBB /* LaunchScreen.storyboard */,
 				CD8CBA691E400D1700FEFFBB /* Info.plist */,
@@ -350,6 +353,7 @@
 			files = (
 				CD8CBA5E1E400D1700FEFFBB /* AppDelegate.swift in Sources */,
 				CD8CBA8C1E400F3800FEFFBB /* MoviesViewController.swift in Sources */,
+				CDDA7C5F1E5414B80062B1A4 /* MovieClickViewController.swift in Sources */,
 				CD8CBA8F1E401A2A00FEFFBB /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +607,7 @@
 				CD8CBA841E400D1700FEFFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8CBA851E400D1700FEFFBB /* Build configuration list for PBXNativeTarget "FlicksTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +616,7 @@
 				CD8CBA871E400D1700FEFFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8CBA881E400D1700FEFFBB /* Build configuration list for PBXNativeTarget "FlicksUITests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +625,7 @@
 				CD8CBA8A1E400D1700FEFFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
